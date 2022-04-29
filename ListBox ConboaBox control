@@ -1,0 +1,39 @@
+# listBox-Comboabox-control
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplicationlistbox1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LB1.Items.Clear();
+            if (comboBox1.SelectedItem == "india")
+            {
+                LB1.Items.Add("MAHARASTRA");
+                LB1.Items.Add("GUJRAT");
+                LB1.Items.Add("UP");
+            }
+            if (comboBox1.SelectedItem == "USA")
+            {
+                LB1.Items.Add("A");
+                LB1.Items.Add("B");
+                LB1.Items.Add("C");
+            }
+
+
+        }
+    }
+}
